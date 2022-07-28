@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    
+}
+body{
+   background-color: rgb(1, 28, 43);
+}
+/* Poizy Projects */
+.my-projs{
+    display: grid;
+    align-items: center;
+}
+.h1{
+    font-family: orbitron;
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+    color: rgb(88, 208, 255);
+    text-shadow: 0 0 5px rgb(0, 234, 255),0 0 25px rgb(0, 234, 255);
+}
+.proj-imgs{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.proj-img{
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px rgb(36, 60, 147);
+    transition: box-shadow 0.5s;
+}
+.proj-img:hover{
+    box-shadow:0px 0px 30px 0px rgb(49, 97, 255) ;
+}
+.myname{
+    font-family: monospace;
+    color: rgb(88, 208, 255);
+    font-size: 38px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.myname::before{
+    content: " ";
+    margin-top: 45px;
+    position: absolute;
+    width: 350px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #84a9f3;
+    box-shadow: 0 0 10px 0px rgb(6, 238, 255), 0 0 20px 0px rgb(31, 193, 242);
+}
+.social-link{
+    display: flex;
+    justify-content:center;
+}
+.social-link img{
+    margin-top: 6px;
+    transition: all 0.2s ;
+    width: 80px;
+}
+.social-link img:hover{
+    width: 90px;
+    opacity: 0.9;
+}
+@media (max-width:544px) {
+    .myname{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    .proj-imgs{
+        display: grid;
+    }
+    .proj-img{
+        width: 70vw;
+        margin: 20px;
+        margin-top: 0;
+    }
+    .social-link img{
+        margin-top: 10px;
+        width: 60px;
+    }
+    .social-link img:hover{
+        width: 70px;
+    }
+  
+}
+@media (min-width:544px) and (max-width:1030px) {
+    .proj-img{
+        width: 27vw;
+    }
+    .social-link img{
+        margin-top: 7px;
+        width: 50px;
+    }
+    .social-link img:hover{
+        width: 60px;
+    }
+}
+@media(max-width:365px) {
+   .h1{
+       font-size: 30px;
+       margin: 0;
+       margin-top: 20px;
+   }
+   
+   .myname::before{
+    width: 80vw;
+}
+}

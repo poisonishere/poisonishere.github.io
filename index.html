@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoisonIsHere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./img/poizy_image.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+            <footer class="sec-b-f my-2 p-2 text-secondary bg-info sticky-top bg-opacity-10 rounded fs-5">
+                <div class="bg-dark bg-opacity-10 rounded d-inline-block">
+                    <a href="https://github.com/poisonishere" class="btn btn-dark footer-btn "><i
+                            class="fa-brands fa-github text-light fs-5"></i></a>
+                </div>
+                <div class="bg-dark bg-opacity-10 rounded d-inline-block">
+                    <a href="https://codepen.io/poisonishere" class="btn btn-dark footer-btn "><i
+                            class="fa-brands fa-codepen text-light fs-5"></i></a>
+                </div>
+                <div class="bg-dark bg-opacity-10 rounded d-inline-block">
+                    <a href="https://instagram.com/poisonishere" class="btn btn-danger footer-btn "><i
+                            class="fa-brands fa-instagram text-light fs-5"></i></a>
+                </div>
+                <div class="bg-dark bg-opacity-10 rounded d-inline-block">
+                    <a href="https://facebook.com/poisonishere" class="btn btn-primary footer-btn "><i
+                            class="fa-brands fa-facebook text-light fs-5"></i></a>
+                </div>
+                <div class="bg-dark bg-opacity-10 rounded d-inline-block">
+                    <a href="https://twitter.com/poison_is_here" class="btn btn-info footer-btn "><i
+                            class="fa-brands fa-twitter text-light fs-5"></i></a>
+                </div>
+                <div class="v-control float-end ">
+                    <div class="btn-group ">
+                        <button type="button" class="btn footer-btn p-1 btn-secondary dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-dice"> v2.0.1</i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-secondary bg-opacity-25 "style="backdrop-filter: blur(10px);">
+                            <li><a class="dropdown-item fw-bold" href=""> v2.0.1 <span
+                                        class="badge bg-warning text-warning bg-opacity-10">latest</span></a></li>
+                            <li><a class="dropdown-item fw-bold" href="/">v2.0.0</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fw-bold" href="/1.0">v1.0.1</a></li>
+                            <li><a class="dropdown-item fw-bold" href="/1.0">v1.0.0</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <div class="fs-2 text-center text-warning fw-bold bg-warning rounded bg-opacity-10 m-3 mt-5 p-2" style="backdrop-filter: blur(10px);">
+        This version is currently unavailable for your device
+    </div>
+    <div class="loader justify-content-center align-items-center ">
+        <div class="load text-center">
+            <div style="color: rgb(0, 255, 94);font-size: 4em;">
+                <i class="fa-solid fa-biohazard fa-spin "></i>
+            </div>
+            <div class="fs-2 fw-bold fa-beat-fade">
+                <i class="fa-solid fa-triangle-exclamation text-warning"></i>
+                Prepairing your Poison
+            </div>
+        </div>
+    </div>
+    <style>
+        .loader {
+            position: absolute;
+            top: 0;
+            backdrop-filter: blur(10px);
+            width: 100vw;
+            height: 100vh;
+            font-family: monospace;
+            display: flex;
+        }
+    </style>
+    <style>
+        #particles-js {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        body {
+            overflow: hidden;
+            color: rgb(0, 254, 216);
+            background-color: rgb(1, 28, 43);
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        $(window).on('load', function () {
+            $(".loader").fadeOut();
+        });
+    </script>
+    <script src="js/particals/particles.js"></script>
+    <script src="js/particals/app.js"></script>
+    <script src="js/particals/lib/stats.js"></script>
+</body>
+
+</html>
